@@ -1,0 +1,73 @@
+#if !defined __BORLANDC__
+#include <afxres.h>
+#endif
+#include "resources.h"
+//=============================================================================
+//Resource languages: Codes for languages and sub-languages are declared in 
+//winnt.h eg. for US english replace SUBLANG_ENGLISH_UK with SUBLANG_ENGLISH_US
+//eg. for FRENCH replace LANG_ENGLISH with LANG_FRENCH and then replace 
+//SUBLANG_ENGLISH_UK with either SUBLANG_FRENCH,SUBLANG_FRENCH_BELGIAN,
+//SUBLANG_FRENCH_CANADIAN,SUBLANG_FRENCH_SWISS,SUBLANG_FRENCH_LUXEMBOURG,
+//SUBLANG_FRENCH_MONACO depending on which national or regional variation of
+//the language corresponds best with your requirements.
+//
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK  
+//=============================================================================
+//Dialog
+//=============================================================================
+IDD_DIALOG1 DIALOGEX 0, 0, 252, 149
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+      WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Resources: Menus and Accelerators"  
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif"
+  {
+  DEFPUSHBUTTON   "OK",IDOK,22,62,50,14
+  PUSHBUTTON      "Cancel",IDCANCEL,111,63,50,14
+  }
+//=============================================================================
+//Menu
+//=============================================================================
+IDR_MENU1 MENU
+{
+  POPUP "&File"
+    {  
+    MENUITEM "&Open\tCtrl + O",    IDM_OPEN
+    MENUITEM "&Save\tCtrl + S",    IDM_SAVE
+    MENUITEM SEPARATOR
+    MENUITEM "E&xit",    IDCANCEL
+    }
+  POPUP "&Edit"
+    {
+    MENUITEM "Copy\tCtrl + C",     IDM_COPY
+    MENUITEM "Cut\tCtrl + X",      IDM_CUT
+    MENUITEM "Paste\tCtrl + V",    IDM_PASTE
+    MENUITEM "Undo\tCtrl + Z",     IDM_UNDO, GRAYED
+    }
+  POPUP "Help"
+    {
+    MENUITEM "Help\tF1",     IDM_HELP
+    MENUITEM "About...\tShift + Alt + A", IDM_ABOUT
+    }
+}
+//=============================================================================
+//Accelerators
+//
+//mingw does not recognise the 'control' statement with lowercase alphanumeric 
+//keys but requires the caret (^) instead. If 'ASCII' is used instead of 
+//VIRTKEY, msvc treats it as if VIRTKEY has been used. If uppercase letter is 
+//used then mingw behaves properly with respect to the 'CONTROL' statement
+//=============================================================================
+IDR_ACCELERATOR1 ACCELERATORS
+{
+  "C", IDM_COPY,  VIRTKEY, CONTROL, NOINVERT
+  "V", IDM_PASTE, VIRTKEY, CONTROL, NOINVERT
+  "X", IDM_CUT,   VIRTKEY, CONTROL, NOINVERT
+  "Z", IDM_UNDO,  VIRTKEY, CONTROL, NOINVERT
+  
+  "O", IDM_OPEN,  VIRTKEY, CONTROL, NOINVERT
+  "S", IDM_SAVE,  VIRTKEY, CONTROL, NOINVERT
+  
+  VK_F1, IDM_HELP,VIRTKEY, NOINVERT
+  "A", IDM_ABOUT, VIRTKEY, ALT, SHIFT, NOINVERT
+}
