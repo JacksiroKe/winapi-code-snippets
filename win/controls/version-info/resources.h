@@ -1,0 +1,1 @@
+#define IDD_DIALOG1                200

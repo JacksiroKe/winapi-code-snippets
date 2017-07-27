@@ -1,0 +1,23 @@
+#include <afxres.h>
+#include "resources.h"
+//=============================================================================
+//Menu
+//=============================================================================
+IDR_MENU1 MENU 
+{
+  POPUP "&File"
+    {
+    MENUITEM "E&xit",                       IDCANCEL
+    }
+  POPUP "&Window"
+    {
+    MENUITEM "&Arrange",                    IDM_WND_ARRANGE
+    MENUITEM "&Cascade",                    IDM_WND_CASCADE
+    MENUITEM "&Tile",                       IDM_WND_TILE
+    MENUITEM "&C&lose All",                 IDM_WND_CLOSEALL
+    }
+  POPUP "&Help"
+    {
+    MENUITEM "&About...",                   IDM_HELP_ABOUT, GRAYED
+    }
+}
