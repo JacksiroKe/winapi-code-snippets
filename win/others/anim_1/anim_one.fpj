@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<VersionInfo>
+		<VersionNumbers Major="1" Minor="0" Release="0" Build="0"/>
+		<LanguageID Value="1033"/>
+		<CharsetID Value="1252"/>
+		<CompanyName Value="Jacksiro"/>
+		<FileVersion Value="1.0.0.0"/>
+		<FileDescription Value="Windows Application"/>
+		<InternalName Value=""/>
+		<LegalCopyright Value=""/>
+		<LegalTrademarks Value=""/>
+		<OriginalFilename Value=""/>
+		<ProductName Value="Animation 1"/>
+		<ProductVersion Value="1.0.0.0"/>
+		<AutoIncrementBuild Value="No"/>
+	</VersionInfo>
+	<Libs Value="-mwindows "/>
+	<Flags Value=""/>
+	<Target Value="anim_one.exe"/>
+	<CommandLine Value=""/>
+	<CompilerOptions Value="-Wall -s"/>
+	<DeleteObjectsBefore Value="Yes"/>
+	<DeleteObjectsAfter Value="Yes"/>
+	<DeleteMakefileAfter Value="Yes"/>
+	<DeleteResourcesAfter Value="Yes"/>
+	<EnableTheme Value="Yes"/>
+	<RequiresAdmin Value="No"/>
+	<CompilerType Value="CPP"/>
+	<AppType Value="GUI"/>
+	<Files>
+		<File Name="anim_one.cpp"/>
+	</Files>
+</Project>
