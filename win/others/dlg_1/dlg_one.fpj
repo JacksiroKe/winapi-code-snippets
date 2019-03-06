@@ -11,13 +11,13 @@
 		<LegalCopyright Value=""/>
 		<LegalTrademarks Value=""/>
 		<OriginalFilename Value=""/>
-		<ProductName Value="Animation 1"/>
+		<ProductName Value="Dialog 1"/>
 		<ProductVersion Value="1.0.0.0"/>
 		<AutoIncrementBuild Value="No"/>
 	</VersionInfo>
 	<Libs Value="-mwindows "/>
 	<Flags Value=""/>
-	<Target Value="anim_one.exe"/>
+	<Target Value="dlg_one.exe"/>
 	<CommandLine Value=""/>
 	<CompilerOptions Value="-Wall -s"/>
 	<DeleteObjectsBefore Value="Yes"/>
@@ -29,8 +29,8 @@
 	<CompilerType Value="CPP"/>
 	<AppType Value="GUI"/>
 	<Files>
-		<File Name="anim_one.cpp"/>
+		<File Name="dlg_one.cpp"/>
 		<File Name="resource.h"/>
-		<File Name="anim_one.rc"/>
+		<File Name="dlg_one.rc"/>
 	</Files>
 </Project>

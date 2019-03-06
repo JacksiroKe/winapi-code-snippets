@@ -1,0 +1,27 @@
+#include "dlg_three.rc"
+1 24 AppManifest.dat
+1 VERSIONINFO
+    FILEVERSION 1,0,0,0
+    PRODUCTVERSION 1,0,0,0
+    FILEOS 0x4L
+    FILETYPE 0x1L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "Jacksiro"
+            VALUE "FileDescription", "Windows Application"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", ""
+            VALUE "LegalCopyright", ""
+            VALUE "OriginalFilename", ""
+            VALUE "ProductName", "Dialog 3"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04E4
+    END
+END
