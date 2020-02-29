@@ -1,0 +1,38 @@
+#if !defined __BORLANDC__
+#include <afxres.h>
+#endif
+#include "resources.h"
+//=============================================================================
+//Resource languages: Codes for languages and sub-languages are declared in 
+//winnt.h eg. for US english replace SUBLANG_ENGLISH_UK with SUBLANG_ENGLISH_US
+//eg. for FRENCH replace LANG_ENGLISH with LANG_FRENCH and then replace 
+//SUBLANG_ENGLISH_UK with either SUBLANG_FRENCH,SUBLANG_FRENCH_BELGIAN,
+//SUBLANG_FRENCH_CANADIAN,SUBLANG_FRENCH_SWISS,SUBLANG_FRENCH_LUXEMBOURG,
+//SUBLANG_FRENCH_MONACO depending on which national or regional variation of
+//the language corresponds best with your requirements.
+//
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK  
+//=============================================================================
+//Dialog
+//=============================================================================
+IDD_DIALOG1 DIALOGEX 0, 0, 252, 149
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+      WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog Box: Modal"      
+FONT 8, "MS Sans Serif"
+  {
+  DEFPUSHBUTTON   "OK",IDOK,22,62,50,14
+  PUSHBUTTON      "Cancel",IDCANCEL,111,63,50,14
+  }
+//=============================================================================
+//Bitmap
+//=============================================================================
+IDB_BITMAP1 BITMAP "tile.bmp"
+//=============================================================================
+//Cursor
+//=============================================================================
+IDC_CURSOR1 CURSOR "bluearrow.cur"
+//=============================================================================
+//Icon
+//=============================================================================
+IDI_ICON1 ICON "icon1.ico"
